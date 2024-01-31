@@ -1,0 +1,16 @@
+h1 {
+    color: darkblue;
+}
+
+p{
+    width: 60%;
+    background-color: lightblue;
+    color: blue;
+    text-align: center;
+}
+li{ 
+    width: 80%;
+    background-color: lightviolet;
+    color: white;
+    text-align: center; 
+}
