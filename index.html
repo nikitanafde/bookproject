@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>  
+<html> 
+    <main> 
     <head>
         <link href="styles.css" rel="stylesheet"/>
         <meta charset="UTF-8">
@@ -8,20 +9,13 @@
     <body> 
         <header>
         <h1>Book Nook</h1>
+        <div class="begin">
         <p> Welcome to your Book Nook! </p>
         <p> This is your own personal book recommendation website! 
             You can keep track of the books that you have read, find new ones, 
             and make a little booklist for yourself!</p>
+        </div>
         </header>
-        <nav> 
-            <img src="tumblr_20451cf9538b8de6bcb301ab74ada70b_2d5b96e7_640.jpg"/>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#booksrecs">Book Recommendations</a></li>
-                <li><a href="#wishlist">Bountiful Book List</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
         <div> 
             <h3>There are multiple things you can do on this website...</h3>
             <ol>
@@ -29,13 +23,40 @@
                 <li>View how many books you have read</li>
                 <li>See what books you want to add to your Book Nook</li>
             </ol>
+        <nav> 
+            <img src="tumblr_20451cf9538b8de6bcb301ab74ada70b_2d5b96e7_640.jpg"/>
+            <ul>
+                <li><a href="#section2">Books Recs!</a></li>
+                <li><a href="#wishlist">Bountiful Book List</a></li>
+            </ul>
+        </nav>
             <a href="https://www.goodreads.com" target="_blank">Visit the original</a>
         </div>
-        <button type="button" onclick="alert('Read The Silent Patient')">my book rec</button>
+        <div id="section2">
+            <h2> Book Recs!</h2>
+            <p> What are the books YOU are interested in? Find out below!</p>
+            <h3> What genres do you like to read?</h3>
+            <form action="/book_options.php">
+                <input type="checkbox" id="genre1" name="genre1" value="Horror">
+                    <label for="genre1"> I like Horror</label><br>
+                <input type="checkbox" id="genre2" name="genre2" value="Fiction">
+                    <label for="genre2"> I like Fiction</label><br>
+                <input type="checkbox" id="genre3" name="genre3" value="Nonfiction">
+                    <label for="genre3"> I like Non-fiction</label><br>
+                <input type="checkbox" id="genre4" name="genre4" value="Thriller">
+                    <label for="genre4"> I like Thriller</label><br>
+                <input type="checkbox" id="genre5" name="genre5" value="Romance">
+                    <label for="genre5"> I like Romance</label><br>
+                <input type="submit" value="Submit">
+            </form>
+        <!-- <button type="submit" value="Submit" href ='second.html';>Submit</button> -->
+        </div>
+        <!-- <button type="button" onclick="alert('Read The Silent Patient')">my book rec</button> -->
         <footer>
             <p>Developer: Nikita</p>
             <p>&copy; 2024 Nikita's awesome self made website</p>
         </footer>
- 
+        <script src="script.js"></script>
     </body>
+</main>
 </html>
