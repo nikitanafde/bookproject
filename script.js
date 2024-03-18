@@ -17,9 +17,15 @@
 // let isMinor = age <18;
 // if (!isMinor) {
 //   console.log('You are not a minor');
-// }
-let genre1 = False; 
-let genre2 = False; 
-let genre3 = False; 
-let genre4 = False; 
-let genre5 = False; 
+// let Horror = document.GetElementById("genre1"); 
+// let Fiction = document.GetElementById("genre2"); 
+// let NonFiction = document.GetElementById("genre3"); 
+// let Thriller = document.GetElementById("genre4"); 
+// let Romance = document.GetElementById("genre5"); 
+let genre = 0;
+let Horror = false; 
+let Fiction = false;
+let Nonfiction = false;
+let Thriller = false;
+let Romance = false; 
+

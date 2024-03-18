@@ -23,12 +23,12 @@
                 <li>View how many books you have read</li>
                 <li>See what books you want to add to your Book Nook</li>
             </ol>
-        <nav> 
-            <img src="tumblr_20451cf9538b8de6bcb301ab74ada70b_2d5b96e7_640.jpg"/>
             <ul>
                 <li><a href="#section2">Books Recs!</a></li>
                 <li><a href="#wishlist">Bountiful Book List</a></li>
             </ul>
+        <nav> 
+            <img src="tumblr_20451cf9538b8de6bcb301ab74ada70b_2d5b96e7_640.jpg"/>
         </nav>
             <a href="https://www.goodreads.com" target="_blank">Visit the original</a>
         </div>
@@ -36,7 +36,7 @@
             <h2> Book Recs!</h2>
             <p> What are the books YOU are interested in? Find out below!</p>
             <h3> What genres do you like to read?</h3>
-            <form action="/book_options.php">
+            <form method= "books" action="submit.php">
                 <input type="checkbox" id="genre1" name="genre1" value="Horror">
                     <label for="genre1"> I like Horror</label><br>
                 <input type="checkbox" id="genre2" name="genre2" value="Fiction">
@@ -50,6 +50,11 @@
                 <input type="submit" value="Submit">
             </form>
         <!-- <button type="submit" value="Submit" href ='second.html';>Submit</button> -->
+        </div>
+        <div> 
+            <h2> Book Tracker</h2>
+            <p> What books are on your tbr? </p>
+            
         </div>
         <!-- <button type="button" onclick="alert('Read The Silent Patient')">my book rec</button> -->
         <footer>
